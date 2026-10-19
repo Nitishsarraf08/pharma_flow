@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home – PharmaFlow</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font:400 1.05rem/1.6 Inter,system-ui,sans-serif;color:#4b5f5a;background:#f6fbf9}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0 0 .5em;line-height:1.1}
+.wrap{max-width:75rem;margin:0 auto;padding:0 2.3rem}
+
+header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding-top:1rem;padding-bottom:1rem}
+.logo{display:flex;align-items:center;gap:.7rem;font:800 1.4rem "Bricolage Grotesque",sans-serif;color:#052b27;text-decoration:none}
+.logo span{width:2.5rem;height:2.5rem;border-radius:50%;background:#0b7a5f;color:#fff;display:grid;place-items:center;font-size:1.3rem}
+nav a{display:inline-block;padding:.5rem 1rem;margin-left:.2rem;border-radius:2rem;color:#4b5f5a;text-decoration:none}
+nav a.on{background:#0b7a5f;color:#fff}
+
+.hero{background:#012e2e;color:#d9efe9;padding:5rem 0}
+.hero small{display:block;color:#f2b134;font-weight:600;letter-spacing:.03em;margin-bottom:.8rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;color:#e6f6f1;max-width:18ch}
+.hero p{font-size:1.2rem;max-width:36rem}
+.btn{display:inline-block;margin:1rem .6rem 0 0;padding:.75rem 1.5rem;border-radius:2rem;font-weight:600;text-decoration:none;border:2px solid #0b7a5f}
+.btn.fill{background:#0b7a5f;color:#fff}
+.btn.line{color:#e6f6f1;border-color:#4a8f84}
+
+.main{padding:4rem 0}
+.main .wrap{display:grid;gap:2rem;grid-template-columns:1fr 1fr;align-items:start}
+.main h2{font-size:2.3rem;color:#052b27}
+.card{background:#fff;border:1px solid #e1ece8;border-radius:1.5rem;padding:1.2rem 1.6rem;margin-bottom:1.2rem}
+.card h3{font-size:1.3rem;color:#0b7a5f;margin-bottom:.3rem}
+.card p{margin:0}
+
+footer{border-top:1px solid #e1ece8;padding:2rem 0;text-align:center}
+
+@media (max-width:48rem){.main .wrap{grid-template-columns:1fr}.wrap{padding:0 1.2rem}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="#"><span>+</span>PharmaFlow</a>
+  <nav>
+    <a class="on" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <small>WELCOME</small>
+  <h1>Run your pharmacy with confidence</h1>
+  <p>Manage medicine stock, expiry dates, sales, billing and suppliers from one simple web-based system.</p>
+  <a class="btn fill" href="dashboard.html">Open dashboard</a>
+  <a class="btn line" href="features.html">See features</a>
+</div></section>
+
+<section class="main"><div class="wrap">
+  <div>
+    <h2>Everything in one place</h2>
+    <p>Add and search medicines, track stock levels and expiry, process sales, print invoices and keep supplier and prescription records — with alerts and reports to keep you on top of it.</p>
+  </div>
+  <div>
+    <div class="card"><h3>Stock and expiry tracking</h3><p>Low-stock and expiry alerts show what to reorder and what to remove.</p></div>
+    <div class="card"><h3>Billing and sales</h3><p>Create a bill, generate an invoice and keep a full sales history.</p></div>
+    <div class="card"><h3>Reports and admin dashboard</h3><p>See sales, purchases and staff activity at a glance.</p></div>
+  </div>
+</div></section>
+
+<footer>© 2026 PharmaFlow Pharmacy Management System</footer>
+
+</body>
+</html>
